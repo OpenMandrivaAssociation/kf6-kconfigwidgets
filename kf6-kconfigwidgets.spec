@@ -26,6 +26,7 @@ BuildRequires: doxygen
 BuildRequires: cmake(Qt6ToolsTools)
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6QuickTest)
+BuildRequires: cmake(KF6CoreAddons)
 BuildRequires: cmake(KF6GuiAddons)
 BuildRequires: cmake(KF6ColorScheme)
 Requires: %{libname} = %{EVRD}
