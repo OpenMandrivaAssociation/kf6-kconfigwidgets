@@ -31,6 +31,8 @@ BuildRequires: cmake(KF6GuiAddons)
 BuildRequires: cmake(KF6WidgetsAddons)
 BuildRequires: cmake(KF6ColorScheme)
 BuildRequires: cmake(KF6Codecs)
+# Just to make sure we don't pull the KF5 version
+BuildRequires: plasma6-xdg-desktop-portal-kde
 Requires: %{libname} = %{EVRD}
 
 %description
