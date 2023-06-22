@@ -1,6 +1,6 @@
 %define libname %mklibname KF6ConfigWidgets
 %define devname %mklibname KF6ConfigWidgets -d
-%define git 20230609
+%define git 20230622
 
 Name: kf6-kconfigwidgets
 Version: 5.240.0
@@ -81,9 +81,15 @@ Widgets for configuration dialogs
 
 %find_lang %{name} --all-name --with-qt --with-html
 
+D=$(pwd)
+cd %{buildroot}
+for i in .%{_datadir}/locale/*/kf6_entry.desktop; do
+	echo "%%lang($(echo $i |cut -d/ -f5)) $(echo $i |cut -b2-)" >>$D/%{name}.lang
+done
+cd -
+
 %files -f %{name}.lang
 %{_datadir}/qlogging-categories6/kconfigwidgets.*
-%{_datadir}/locale/en_US/kf5_entry.desktop
 
 %files -n %{devname}
 %{_includedir}/KF6/KConfigWidgets
