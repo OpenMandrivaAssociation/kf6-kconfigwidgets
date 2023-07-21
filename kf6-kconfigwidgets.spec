@@ -1,6 +1,6 @@
 %define libname %mklibname KF6ConfigWidgets
 %define devname %mklibname KF6ConfigWidgets -d
-%define git 20230715
+%define git 20230722
 
 Name: kf6-kconfigwidgets
 Version: 5.240.0
