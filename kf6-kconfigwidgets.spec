@@ -1,6 +1,6 @@
 %define libname %mklibname KF6ConfigWidgets
 %define devname %mklibname KF6ConfigWidgets -d
-%define git 20230927
+%define git 20231005
 
 Name: kf6-kconfigwidgets
 Version: 5.240.0
@@ -94,7 +94,6 @@ cd -
 %files -n %{devname}
 %{_includedir}/KF6/KConfigWidgets
 %{_libdir}/cmake/KF6ConfigWidgets
-%{_qtdir}/mkspecs/modules/qt_KConfigWidgets.pri
 %{_qtdir}/doc/KF6ConfigWidgets.*
 
 %files -n %{libname}
