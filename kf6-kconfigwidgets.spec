@@ -5,7 +5,7 @@
 #define git 20231103
 
 Name: kf6-kconfigwidgets
-Version: 5.247.0
+Version: 5.248.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/kconfigwidgets/-/archive/master/kconfigwidgets-master.tar.bz2#/kconfigwidgets-%{git}.tar.bz2
